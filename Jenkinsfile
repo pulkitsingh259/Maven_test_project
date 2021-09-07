@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                sh "mvn test -f /var/lib/jenkins/workspace/Maven_Sample_Pipeline/Maven_test_project/pom.xml" 
+                sh "mvn test -f /home/jenkins/workspace/JavaPipeline/pom.xml" 
             }
         }
         stage('Deploy') { 
